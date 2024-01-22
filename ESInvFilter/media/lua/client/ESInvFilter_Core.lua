@@ -89,6 +89,16 @@ function ISInventoryPage:createChildren()
     
 end
 
+-- **************************************************************************
+-- Update position of filter panel.
+-- **************************************************************************
+local original_ISInventoryPage_prerender = ISInventoryPage.prerender
+function ISInventoryPage:prerender()
+    original_ISInventoryPage_prerender(self)
+    self.filterPanel:setX(self.transferAll:getX() - self.filterPanel.width - 20)
+    self.filterPanel:setY(self.transferAll:getY())
+end
+
 
 function ISInventoryPage:OnFilterUpdated(from)
     self:dirtyUI()
