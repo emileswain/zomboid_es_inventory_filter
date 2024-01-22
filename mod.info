@@ -1,0 +1,9 @@
+name=ES Inventory Filter (v1.0.0)
+id=ESInvFilter
+modversion=1.0.0
+description=Adds buttons to inventpry panel to quickly filter by Food, Weapons, Literature, and Clothing
+authors=Emile.Swain
+poster=posters/invfilter_1.png
+poster=posters/invfilter_2.png
+icon=mini-poster.png
+url=http://theindiestone.com/forums/index.php/topic/2011-how-to-use-the-upcoming-modloader/
