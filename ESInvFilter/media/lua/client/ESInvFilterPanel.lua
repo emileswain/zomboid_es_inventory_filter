@@ -159,20 +159,20 @@ end
 -- mainly for testing. 
 -- TODO disable.
 -- **************************************************************************
-function onCustomUIKeyPressed(key)
-    if key == 20 then --Q or T
-        getPlayer():Say('display Inventory Filter')
-        if ZZTopToggleContainer == nil then
-            ZZTopToggleContainer = ESInvFilterPanel:new()
-            ZZTopToggleContainer.isGlobal = true
-            ZZTopToggleContainer:initialise()
-            ZZTopToggleContainer:show()
-        else
-            ZZTopToggleContainer:toggleVisibility()
-        end
-    end
-end
-Events.OnCustomUIKeyPressed.Add(onCustomUIKeyPressed)
+-- function onCustomUIKeyPressed(key)
+--     if key == 20 then --Q or T
+--         getPlayer():Say('display Inventory Filter')
+--         if ZZTopToggleContainer == nil then
+--             ZZTopToggleContainer = ESInvFilterPanel:new()
+--             ZZTopToggleContainer.isGlobal = true
+--             ZZTopToggleContainer:initialise()
+--             ZZTopToggleContainer:show()
+--         else
+--             ZZTopToggleContainer:toggleVisibility()
+--         end
+--     end
+-- end
+-- Events.OnCustomUIKeyPressed.Add(onCustomUIKeyPressed)
 
 
 

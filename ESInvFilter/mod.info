@@ -1,6 +1,6 @@
-name=ES Inventory Filter (v1.0.1)
+name=ES Inventory Filter (v1.0.2)
 id=ESInvFilter
-modversion=1.0.1
+modversion=1.0.2
 description=Adds buttons to inventpry panel to quickly filter by Food, Weapons, Literature, and Clothing
 authors=Emile.Swain
 poster=posters/invfilter_1.png
