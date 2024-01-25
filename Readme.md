@@ -1,6 +1,6 @@
 # Project Zomboid filter
 ## version
-1.0.0
+1.0.3
 
 ## Steam deck
 Haven't tested steam deck. May not work with joy pad. May update in future.

@@ -1,7 +1,8 @@
-name=ES Inventory Filter (v1.0.2)
+name=ES Inventory Filter (v1.0.3)
 id=ESInvFilter
-modversion=1.0.2
+modversion=1.0.3
 description=Adds buttons to inventpry panel to quickly filter by Food, Weapons, Literature, and Clothing
+description=Not tested with steamd deck.
 authors=Emile.Swain
 poster=posters/invfilter_1.png
 poster=posters/invfilter_2.png

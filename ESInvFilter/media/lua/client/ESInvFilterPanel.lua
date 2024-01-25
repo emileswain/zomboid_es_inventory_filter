@@ -71,7 +71,8 @@ function ESInvFilterPanel:initialise()
 end
 
 function ESInvFilterPanel:makeButton(label)
-    local btn = ISButton:new(0, 0, 20, 20, label, self, self.onToggle)
+    local fontHgtSmall = getTextManager():getFontHeight(UIFont.Small)
+    local btn = ISButton:new(0, 0, 20, fontHgtSmall, label, self, self.onToggle)
     btn:initialise()
     btn:enableToggle( true, false)
     btn:setOnClick(self.onToggle, label)
@@ -129,6 +130,8 @@ end
 function ESInvFilterPanel:prerender()
     ISPanel.prerender(self);
     
+    local fontHgtSmall = getTextManager():getFontHeight(UIFont.Small)
+
     -- if global insance, then position in center of screen.
     if self.isGlobal then
         local sW = getCore():getScreenWidth() -- Get the screen resolution
@@ -142,12 +145,14 @@ function ESInvFilterPanel:prerender()
     local cX = 0; cY = 0; spacing = 3
     for k, v in pairs(btns) do
        v:setX(cX)
-       v:setY(3)
+       v:setY(0)
+       v:setWidth(fontHgtSmall)
+       v:setHeight(fontHgtSmall)
         cX = v.x + v.width + spacing
     end
 
     self:setWidth(cX)
-    self:setHeight(6 + 20)
+    self:setHeight(fontHgtSmall)
 
 end
 
